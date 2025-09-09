@@ -1,0 +1,8 @@
+{
+  "name": "Spec Generator AI",
+  "description": "An AI-powered application that transforms high-level feature descriptions into detailed software specifications from various professional perspectives.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
