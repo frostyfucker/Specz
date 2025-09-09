@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { SavedSpec, Persona } from '../types';
 import { PERSONAS } from '../constants';
@@ -13,14 +14,14 @@ interface SavedSpecItemProps {
 }
 
 const personaIcons: Record<Persona, React.FC<React.SVGProps<SVGSVGElement>>> = {
-  [Persona.PRODUCT_MANAGER]: UserIcon,
-  [Persona.TECHNICAL_LEAD]: CodeIcon,
-  [Persona.UX_DESIGNER]: DesignIcon,
+  [Persona.NARRATIVE]: UserIcon,
+  [Persona.REFERENCE]: CodeIcon,
+  [Persona.JOURNEYS]: DesignIcon,
 };
 
 export const SavedSpecItem: React.FC<SavedSpecItemProps> = ({ spec, onView, onDelete }) => {
   const PersonaIcon = personaIcons[spec.persona];
-  const personaLabel = PERSONAS[spec.persona].label;
+  const personaLabel = PERSONAS[spec.persona]?.label || spec.persona;
   
   const formattedDate = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',

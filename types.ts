@@ -1,7 +1,8 @@
+
 export enum Persona {
-  PRODUCT_MANAGER = 'PRODUCT_MANAGER',
-  TECHNICAL_LEAD = 'TECHNICAL_LEAD',
-  UX_DESIGNER = 'UX_DESIGNER',
+  NARRATIVE = 'NARRATIVE',
+  REFERENCE = 'REFERENCE',
+  JOURNEYS = 'JOURNEYS',
 }
 
 export interface PersonaDetails {

@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { InputForm } from './components/InputForm';
 import { SpecDisplay } from './components/SpecDisplay';
@@ -8,7 +9,7 @@ import { SparklesIcon } from './components/icons/SparklesIcon';
 
 const App: React.FC = () => {
   const [description, setDescription] = useState<string>('');
-  const [persona, setPersona] = useState<Persona>(Persona.PRODUCT_MANAGER);
+  const [persona, setPersona] = useState<Persona>(Persona.NARRATIVE);
   const [mediaInput, setMediaInput] = useState<MediaInput | null>(null);
   const [spec, setSpec] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
